@@ -11,6 +11,7 @@ $base_url.= 'dadosConsulta.localPesquisa.cdLocal=-1';
 $base_url.= '&cbPesquisa=NUMPROC';
 $base_url.= '&dadosConsulta.valorConsulta=';
 
+/** Informe aqui o numero do processo **/
 $num_processo = '0031561-42.0600.8.26.0090';
 $html = file_get_contents($base_url.$num_processo);
 $html = preg_replace('/^\s+|\n|\r|\s+$/m', '', $html);
@@ -21,6 +22,7 @@ $data = [];
 $read = 0;
 
 $warning = null;
+// Tem que colocar o @ porquê tem coisas sinistras no html a ser parseado 
 $warning = @$doc->getElementById('mensagemRetorno');
 if($warning != null){
     $msg = $warning->firstChild->nodeValue;
