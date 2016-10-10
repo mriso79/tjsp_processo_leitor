@@ -1,7 +1,6 @@
 <?php
 /**
  * @author: @mriso_dev
- * É nóis
  * Date: 07/10/16
  * Time: 13:40
  */
