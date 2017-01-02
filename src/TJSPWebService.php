@@ -59,7 +59,20 @@ class TJSPWebService
         foreach($nodes as $node) {
             $nodePro[] = $node;
         }
-        $dados_processo = $nodePro[1];
+
+        if(isset($nodePro[1])) {
+            $dados_processo = $nodePro[1];
+        }else{
+            $msg = 'Erro ao parsear este processo. Verifique no site do TJSP.';
+            $var = ['erro'=>$msg];
+            if($json) {
+                $json = json_encode(['erro' => $msg]);
+                echo $json;
+                exit;
+            }
+            return $var;
+        }
+
         $cc = 0;
         foreach($dados_processo->childNodes as $dpnode) {
             if($cc == 0){
