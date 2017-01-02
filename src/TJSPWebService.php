@@ -5,6 +5,7 @@
  * Use o método getProcesso se vc quiser que retorne os dados
  * Use o método ProcessoToJson se vc quiser que retorne um JSON para sua aplicação
  */
+namespace TJSPWebService;
 
 class TJSPWebService
 {
@@ -13,8 +14,6 @@ class TJSPWebService
         $base_url.= 'dadosConsulta.localPesquisa.cdLocal=-1';
         $base_url.= '&cbPesquisa=NUMPROC';
         $base_url.= '&dadosConsulta.valorConsulta=';
-
-        //$num_processo = '0031561-42.0600.8.26.0090';
 
         try {
             $html = file_get_contents($base_url.$idProcesso);
