@@ -1,6 +1,10 @@
 # tjsp_processo_leitor em PHP
 Um parser dos processos no tribunal de Justiça de SP. Basta informar o número do processo, e esta pequena classe PHP lhe retornará um JSON com as informações desejadas do processo.
 
+# MANUTENÇÃO DO DATACENTER
+*O portal do TJSP e os serviços on-line estarão indisponíveis de 2 a 9 de janeiro, em razão da manutenção no datacenter pela Secretaria de Tecnologia da Informação.*
+
+
 **composer require mriso_dev/tjsp_processo_leitor**
 
 Adicione *"minimum-stability":"dev"* no composer.json
