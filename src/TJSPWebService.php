@@ -29,6 +29,18 @@ class TJSPWebService
         }
 
         $html = preg_replace('/^\s+|\n|\r|\s+$/m', '', $html);
+
+        if(strpos($html, 'PaginaIndisponibilidade')){
+            $msg = 'A pesquisa de processos do TJSP esta indisponivel. Verifique no site do TJSP.';
+            $var = ['erro'=>$msg];
+            if($json) {
+                $json = json_encode(['erro' => $msg]);
+                echo $json;
+                exit;
+            }
+            return $var;
+        }
+
         $doc = new \DOMDocument();
         @$doc->loadHtml($html);
 
