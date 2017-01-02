@@ -1,5 +1,11 @@
 # tjsp_processo_leitor em PHP
-Um parser dos processos no tribunal de Justiça de SP. Basta informar o número do processo, e este pequeno arquivo PHP lhe retornará um JSON com as informações desejadas do processo.
+Um parser dos processos no tribunal de Justiça de SP. Basta informar o número do processo, e esta pequena classe PHP lhe retornará um JSON com as informações desejadas do processo.
+
+composer require mriso_dev/tjsp_processo_leitor
+
+
+
+Na pasta functional temos uma script funcional para os mais simplistas.
 
 Obs: Necessita da classe DOM habilitada.
 
