@@ -3,8 +3,6 @@ Um parser dos processos no tribunal de Justiça de SP. Basta informar o número 
 
 Na pasta functional temos uma script funcional para os mais simplistas.
 
-Para quem instalar com o Composer:
-
 Obs: Necessita da classe DOM habilitada.
 
 É apenas uma ferramenta para auxiliar quem está tendo problemas em fazê-lo. Este snippet é não-oficial, está disponibilizado "tal como está" e não damos suporte ou garantia alguma.
