@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-0": {
-            "TJSPWebService": "src/"
+            "TJSPWebService": "tjsp_processo_leitor/src/"
         }
     }
 }
