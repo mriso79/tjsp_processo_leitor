@@ -7,7 +7,7 @@ Adicione *"minimum-stability":"dev"* no composer.json
 
 include 'vendor/autoload.php';
 
-use TJSPWebService\TJSPWebService;
+use TJSPWebService\TJSPWebService();
 
 TJSPWebService::ProcessoToJson('xxxxxxx.xxxxx.x.xxx.xxx');
 
