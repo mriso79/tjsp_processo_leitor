@@ -6,8 +6,11 @@ Um parser dos processos no tribunal de Justiça de SP. Basta informar o número 
 Adicione *"minimum-stability":"dev"* no composer.json
 
 include 'vendor/autoload.php';
+
 use TJSPWebService\TJSPWebService;
+
 TJSPWebService::ProcessoToJson('xxxxxxx.xxxxx.x.xxx.xxx');
+
 
 Na pasta functional temos uma script funcional para os mais simplistas.
 
